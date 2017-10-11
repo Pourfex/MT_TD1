@@ -2,7 +2,7 @@ package session1.td;
 
 public class NatParInt implements Nat{
 	
-	public static FabriqueNaturel fab = new NatParInt(0);
+	public static FabriqueNaturel FAB = new NatParInt(0);
 	private int val;
 	
 	public NatParInt(int val) {
@@ -37,7 +37,7 @@ public class NatParInt implements Nat{
 	}
 
 	@Override
-	public Nat predecesseur(Nat n) {
+	public Nat predecesseur() {
 		if(this.val() == 0) {
 			throw new UnsupportedOperationException("Le predecesseur de  n'est pas un naturel");
 		}
